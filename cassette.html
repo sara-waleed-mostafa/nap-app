@@ -1,0 +1,608 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Old School Cassette Player</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Old School Cassette Player with HTML5 Audio: Vintage format meets modern web tech: an HTML5 audio player with realistic controls" />
+        <meta name="keywords" content="cassette, html5, audio, player, css3, buttons, sounds, vintage, old school, javascript, jquery" />
+        <meta name="author" content="Codrops" />
+        
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+      
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+         <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/holobox.css" rel="stylesheet" type="text/css"/>
+
+        
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link href="css/style3.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/style10.css" />
+        
+        
+        
+        
+        
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/knobKnob.css" />
+        <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+    </head>
+    <body>
+        
+        
+        
+        
+        
+        
+        
+       
+		
+			 Codrops top bar 
+            <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/SwatchBook/">
+                    <strong>&laquo; Previous Demo: </strong>Swatch Book with CSS3 &amp; jQuery
+                </a>
+                <span class="right">
+					<a href="http://manicho.deviantart.com/art/Cassette-PSD-File-86548493">Cassette by Mauricio Estrella</a>
+                    <a href="http://tympanus.net/codrops/2012/07/12/old-school-cassette-player-with-html5-audio/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div>/ Codrops top bar 
+			
+			<header>
+			
+				<h1><span>Old School Cassette Player</span> with HTML5 Audio</h1>
+				<h2>Vintage format meets modern web tech: an HTML5 audio player with realistic controls <br /><strong>Best viewed &amp; listened to in modern browsers</strong></h2>
+
+				
+				<div class="support-note"> let's check browser support with modernizr 
+					<span class="no-cssanimations">CSS animations are not supported in your browser</span>
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+
+
+
+
+<header id="header">    
+          
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                <div id="logonap" class="bounce animated">
+                    <a class="navbar-brand" href="index.html">
+                        
+                    	<h1> 
+                           
+
+                            <img src="img/icons-05.png" alt=""/>
+                           
+                        </h1>
+                       
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                       
+                    <li class="active"><a href="index.html"> HOME </a></li>
+                    <li><a href="toys.html"> TOYS </a></li>
+                    <li><a href="games.html"> GAMES </a></li>
+                    <li><a href="movies.html"> MOVIES </a></li>
+                   
+                    <li><a href="contact-us.html"> CONTACT US </a></li>
+                  </ul>
+
+                <ul class="ca-menu">
+                    
+                    
+                     <li>
+                        <a href="contact-us.html">
+                            <span class="ca-icon">
+                                
+                                <img src="img/icons-07.png" alt=""/>
+
+                     <img src="img/icons-01.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">CONTACT<br> US</h2>
+                                <h3 class="ca-sub">24/7 for you needs</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="movies.html">
+                            <span class="ca-icon">
+                                <img src="img/icons-02.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">STORY</h2>
+                                <h3 class="ca-sub">Professionals in action</h3>
+                            </div>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="games.html">
+                            <span class="ca-icon" id="heart">
+                                <img src="img/icons-03.png" alt=""/>
+                                
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">GAMES</h2>
+                                <h3 class="ca-sub">Understanding visually</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="toys.html">
+                            <span class="ca-icon">
+                           
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">AHO</h2>
+                                <h3 class="ca-sub">Advanced use of technology</h3>
+                            </div>
+                        </a>
+                    </li>
+                 
+                    <li>
+                        <a href="index.html">
+                            <span class="ca-icon">
+                                <img src="img/icons-04.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">HOME</h2>
+                                <h3 class="ca-sub">Personalized to your needs</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                                                  
+                </div>
+              
+                
+            </div>
+        </div>
+    </header>
+
+ <div class="container">
+
+			<div id="vc-container" class="vc-container">
+				<div class="vc-tape-wrapper">
+					<div class="vc-tape">
+						<div class="vc-tape-back">
+							<div class="vc-tape-wheel vc-tape-wheel-left"><div></div></div>
+							<div class="vc-tape-wheel vc-tape-wheel-right"><div></div></div>
+						</div>
+						<div class="vc-tape-front vc-tape-side-a">
+							<span>A</span>
+						</div>
+						<div class="vc-tape-front vc-tape-side-b">
+							<span>B</span>
+						</div>
+					</div>
+				</div>
+				<div class="vc-loader"></div>
+			</div> //vc-container 
+		
+                        
+                        
+                        
+                        
+                        <ul class="vc-controls" style="">
+                            <li class="vc-control-play">Play<span></span>
+                            </li>
+                            <li class="vc-control-rewind">Rew<span></span>
+                            </li>
+                            <li class="vc-control-fforward">FF<span></span>
+                            </li>
+                            <li class="vc-control-stop">Stop<span></span>
+                            </li>
+                            <li class="vc-control-switch">Switch<span></span>
+                            </li>
+                        </ul>
+                        
+                        <div style="" class="vc-volume-wrap">
+                            <div class="vc-volume-control">
+                                <div class="vc-volume-knob">
+                                    <div class="knob">	
+                                        <div class="top" style="-webkit-transform: rotate(248deg);">
+                                            
+                                        </div>			
+                                        <div class="base">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+			<div class="attribution">
+				<p>Songs by <a href="http://freemusicarchive.org/music/Blue_Ducks/">Blue Ducks</a> and <a href="http://freemusicarchive.org/music/Blank__Kytt/">Blank & Kytt</a>:</p>
+
+				<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" about="http://freemusicarchive.org/music/Blue_Ducks/Six/"><span property="dct:title">Six</span> (<a rel="cc:attributionURL" property="cc:attributionName" href="http://freemusicarchive.org/music/Blue_Ducks/">Blue Ducks</a>) / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+
+				<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" about="http://freemusicarchive.org/music/Blank__Kytt/Heavy_Crazy_Serious/"><span property="dct:title">Heavy, Crazy, Serious</span> (<a rel="cc:attributionURL" property="cc:attributionName" href="http://blankkytt.bandcamp.com/">Blank & Kytt</a>) / <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></div>
+				
+				<p>Cassette tape PSD by <a href="http://manicho.deviantart.com/art/Cassette-PSD-File-86548493">Mauricio Estrella</a></p>
+			</div>//attribution
+
+		</div> //container 
+		
+		
+		<script type="text/javascript">	
+			$(function() {
+				
+				$( '#vc-container' ).cassette();
+						
+				});
+		</script>
+                
+                
+                <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    
+                 
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            
+                        
+                        </div>
+                        <h3 > YOUR WORLD</h3>
+                        <p > "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." Andrew Carnegie</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                          
+                            
+                        </div>
+                     
+                    </div>
+                </div>
+
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                         
+                           
+                        </div>
+                          <h3 > IMAGINATION </h3>
+                        <p >" Alone we can do so little,Together we can do so much " so we must learn our children 
+                        how to communicate with society and how to be patient  </p>
+                    </div>
+                </div>
+<br><br><br>
+                 <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Your Company 2015. All Rights Reserved.</p>
+                   <p>Designed by <a target="_blank" href="http://www.LittleMonsters.com">Little Monsters</a></p>                    </div>
+            </div>
+                 <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/footer.png" class="img-responsive inline" alt="">
+                </div>
+               
+        </div>
+            
+    </footer>
+   
+                
+                
+                
+
+   
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		 KnobKnob by Martin Angelov : https://github.com/martinaglv/KnobKnob 
+		<script src="js/transform.js"></script>
+		<script src="js/knobKnob.jquery.js"></script>
+
+		<script type="text/javascript" src="js/jquery.cassette.js"></script>
+   
+   
+                     <script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+     
+     
+  
+    </body>
+</html>
+
+-->
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    
+     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<!--        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>-->
+<!--        <link href="css/lightbox.css" rel="stylesheet" type="text/css"/>-->
+        <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+      
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+         <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/holobox.css" rel="stylesheet" type="text/css"/>
+
+        
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link href="css/knobKnob.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link href="css/style3.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/style10.css" />
+    
+    
+        <link href="plugin/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/sound.css" rel="stylesheet" type="text/css"/>
+   
+    
+    
+   
+    
+</head>
+<body>
+
+<div id="title"></div>
+<header id="header">    
+          
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                <div id="logonap" class="bounce animated">
+                    <a class="navbar-brand" href="index.html">
+                        
+                    	<h1> 
+                           
+
+                            <img src="img/icons-05.png" alt=""/>
+                           
+                        </h1>
+                       
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+<!--                 <ul class="nav navbar-nav navbar-right">
+                       
+                    <li class="active"><a href="index.html"> HOME </a></li>
+                    <li><a href="toys.html"> TOYS </a></li>
+                    <li><a href="games.html"> GAMES </a></li>
+                    <li><a href="movies.html"> MOVIES </a></li>
+                   
+                    <li><a href="contact-us.html"> CONTACT US </a></li>
+                  </ul>-->
+
+                <ul class="ca-menu">
+                    
+                    
+                     <li>
+                        <a href="contact-us.html">
+                            <span class="ca-icon">
+                                
+<!--                                <img src="img/icons-07.png" alt=""/>-->
+
+                     <img src="img/icons-01.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">CONTACT<br> US</h2>
+                                <h3 class="ca-sub">24/7 for you needs</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="movies.html">
+                            <span class="ca-icon">
+                                <img src="img/icons-02.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">STORY</h2>
+                                <h3 class="ca-sub">Professionals in action</h3>
+                            </div>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="games.html">
+                            <span class="ca-icon" id="heart">
+                                <img src="img/icons-03.png" alt=""/>
+                                
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">GAMES</h2>
+                                <h3 class="ca-sub">Understanding visually</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+<!--                    <li>
+                        <a href="toys.html">
+                            <span class="ca-icon">
+                           
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">AHO</h2>
+                                <h3 class="ca-sub">Advanced use of technology</h3>
+                            </div>
+                        </a>
+                    </li>-->
+                 
+                    <li>
+                        <a href="index.html">
+                            <span class="ca-icon">
+                                <img src="img/icons-04.png" alt=""/>
+                            </span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">HOME</h2>
+                                <h3 class="ca-sub">Personalized to your needs</h3>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                                                  
+                </div>
+              
+                
+            </div>
+        </div>
+    </header>
+
+<!--
+<footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    
+                 
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            
+                        
+                        </div>
+                        <h3 > YOUR WORLD</h3>
+                        <p > "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." Andrew Carnegie</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                          
+                            
+                        </div>
+                     
+                    </div>
+                </div>
+
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                         
+                           
+                        </div>
+                          <h3 > IMAGINATION </h3>
+                        <p >" Alone we can do so little,Together we can do so much " so we must learn our children 
+                        how to communicate with society and how to be patient  </p>
+                    </div>
+                </div>
+<br><br><br>
+                 <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Your Company 2015. All Rights Reserved.</p>
+                   <p>Designed by <a target="_blank" href="http://www.LittleMonsters.com">Little Monsters</a></p>                    </div>
+            </div>
+                 <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/footer.png" class="img-responsive inline" alt="">
+                </div>
+               
+        </div>
+            
+    </footer>-->
+   
+     <script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+     
+     
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+   <script src="js/holobox.js"></script>
+   <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+   
+   <script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+    <script src="js/newjavascript.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+      <script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+   
+
+
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+//                description:description,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+
+ <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+ <script src="plugin/jquery-jplayer/jquery.jplayer.js" type="text/javascript"></script>
+ <script src="plugin/ttw-music-player-min.js" type="text/javascript"></script>
+ <script src="js/myplaylist.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/myplaylist.js"></script>
+    
+</body>
+</html>
